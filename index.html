@@ -103,11 +103,6 @@
           <h4 class="pub-title">SALUS: A Novel Data-Driven Monitor that Enables Real-Time Safety in Autonomous Driving Systems</h4>
           <p class="authors"><span class="me">Bohan Zhang</span>, Yafan Huang, Guanpeng Li</p>
           <p class="where">IEEE International Conference on Software Quality, Reliability, and Security (QRS), 2022</p>
-          <div class="actions">
-            <a class="btn" href="folders/AV_Safety_Monitor___QRS_2022_CR.pdf">PDF</a>
-            <button class="btn" type="button" data-abstract>Abstract</button>
-          </div>
-          <div class="abstract">This paper proposes SALUS, a data-driven real-time safety monitor that detects and mitigates safety violations of an autonomous vehicle (AV). The key insight is that traffic situations that lead to AV safety violations fall into patterns and can be identified by learning from the safety violations of the AV. Our approach uses machine learning techniques to model the traffic behaviors that result in safety violations, characterize their early symptoms for training a preemptive model, and then detect real-time safety violations before actual crashes happen. To train the model, we leverage a pipeline of fuzzing techniques to tailor AV-specific safety violation symptoms and generate training data via data augmentation. Our evaluation demonstrates that the technique reduces over 97.2% of safety violations in industry-level autonomous driving systems such as Baidu Apollo, with no more than 0.018 false positive rate.</div>
         </div>
       </article>
 
@@ -155,11 +150,6 @@
 </div>
 
 <script>
-  document.querySelectorAll('[data-abstract]').forEach(function (b) {
-    b.addEventListener('click', function () {
-      b.closest('.pub').querySelector('.abstract').classList.toggle('open');
-    });
-  });
 
   document.getElementById('theme-toggle').addEventListener('click', function () {
     var root = document.documentElement;
